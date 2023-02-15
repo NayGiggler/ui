@@ -1,6 +1,6 @@
-_G.Main = {}
+shared.Main = {}
 
-function _G.Main:New(Title)
+function shared.Main:New(Title)
 
 	local appa = Instance.new("ScreenGui")
 	local Frame = Instance.new("Frame")
@@ -52,9 +52,9 @@ function _G.Main:New(Title)
 	end
 	coroutine.wrap(BXLBO_fake_script)()
 
-	_G.Frame = {}
+	shared.Frame = {}
 
-	function _G.Frame:Button(Name,Call)
+	function shared.Frame:Button(Name,Call)
 
 		local TextButton = Instance.new("TextButton")
 
@@ -79,6 +79,6 @@ function _G.Main:New(Title)
 
 	end
 
-	return _G.Frame
+	return shared.Frame
 
 end
